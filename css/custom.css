@@ -1,7 +1,26 @@
-#container {
+.container {
+  margin-top: 2rem; 
+}
+
+.flex {
   display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
 }
 
 #block {
   margin: 0 20px !important;
+}
+
+.main-title {
+  text-decoration: underline;
+}
+
+.text_color {
+  color: #DA4453;
 }
