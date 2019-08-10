@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IV Curve Generator</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="./css/custom.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container">
+      <form onsubmit="return false">
+
+        <h2>Cell Efficiency Calculator</h2>
+      </div>
+      <div class="container" id='container'>
+        <div id="block">
+          <h5>Cell Label</h5>
+          <input id="label" />
+          
+          <h5>Voltage (V)</h5>
+          <textarea placeholder="Paste excel cells" id="voltage"></textarea>
+          
+          <h5>Current(mA)</h5>
+          <textarea placeholder="Paste excel cells" id="current"></textarea>
+          
+          <H5>Active Area (cm<sup>2</sup>)</H5>
+          <input id='area1' placeholder="width" value="0.33"/>
+          <input id='area2' placeholder="height" /> <br>
+          <button type="submit" id="submit">Calc</button>
+        </form>
+        </div>
+
+      <div>
+        <table>
+          <tr>
+            <th>Label</Fill Factor>
+              <th>Voc</th>
+              <th>Jsc</th>
+              <th>Fill Factor</th>
+              <th>Efficiency</th>
+            </tr>
+            
+          </table>
+        </div>
+      </div>
+      <div class="container">
+          <canvas id="myChart"></canvas>
+      </div>
+      
+      
+      <script src="script/script.js" async defer></script>
+    </body>
+    </html>
